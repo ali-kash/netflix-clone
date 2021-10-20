@@ -17,9 +17,7 @@
 - [Firebase](https://firebase.google.com/)
   - Used for hosting
 - [TMDB API](https://www.themoviedb.org/?language=en-US)
-
   - Movie service API
-
 - State management for asynchronous api calls
 
 ---
