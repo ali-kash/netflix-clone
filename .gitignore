@@ -11,9 +11,7 @@
 # production
 /build
 .env
-.firebaserc
-firebase.json
-.firebase/hosting.YnVpbGQ.cache
+.firebase
 
 # misc
 .DS_Store
