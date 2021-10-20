@@ -11,5 +11,9 @@ body {
 	height: 100vh;
 	background-color: black;
 	color: white;
+	font-family: 'Poppins', sans-serif;
+}
+
+.container {
 	padding: 1em;
 }
