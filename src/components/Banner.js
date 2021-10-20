@@ -20,7 +20,13 @@ function Banner() {
 		fetchData()
 	}, [])
 
-	console.log(movie)
+	// function truncate(str, n) {
+	// 	return str?.length > n ? str.substring(0, n - 1) + '...' : str
+	// }
+
+	function truncate(str) {
+		return str?.length > 200 ? str.substring(0, 197) + '...' : str
+	}
 
 	return (
 		<header
@@ -32,15 +38,18 @@ function Banner() {
 			}}
 		>
 			<div className='banner__contents'>
-				<h1>{movie?.title || movie?.name || movie?.original_name}</h1>
+				<h1 className='banner__title'>
+					{movie?.title || movie?.name || movie?.original_name}
+				</h1>
 				<div className='banner__buttons'>
 					<button className='banner__button'>Play</button>
 					<button className='banner__button'>My List</button>
 				</div>
 				<div className='banner__description'>
-					<p>{movie?.overview}</p>
+					<p>{truncate(movie?.overview)}</p>
 				</div>
 			</div>
+			<div className='banner__fadeBottom'></div>
 		</header>
 	)
 }
