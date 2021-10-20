@@ -1,9 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Poppins:wght@100;300;400&display=swap');
+
 * {
 	margin: 0;
-	paddin: 0;
+	padding: 0;
 	box-sizing: border-box;
 }
 
-h1 {
-	color: red;
+body {
+	width: 100vw;
+	height: 100vh;
+	background-color: black;
+	color: white;
+	padding: 1em;
 }
